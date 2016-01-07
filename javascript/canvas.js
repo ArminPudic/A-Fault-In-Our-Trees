@@ -282,8 +282,8 @@ function onLoad()
 			{
 				scale = 2.3; // Sets scale to 2.3 (The biggest zoom in)
 			}
-			context.scale(scale, scale); // Scales the context (only affects context if zooming)
 			context.translate(pan.getX(), pan.getY()); // Panning translates (fetches coordinates from the panning functions (onMouseMove() and onKeyDown())
+			context.scale(scale, scale); // Scales the context (only affects context if zooming)
 		    //console.log(pan.getX());
 			//console.log(pan.getY());
 			exampleFaultTree.mFaultTrees[faultTreeNum].draw(); // Draws the current tree number (0 = 1, 1 = 2 and 2 = 3 due to array start being at 0)
